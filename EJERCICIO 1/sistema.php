@@ -29,22 +29,23 @@ $row=mysqli_fetch_array($query);
                                     <input type="text" class="form-control mb-3" name="nombres" placeholder="Nombres">
                                     <input type="text" class="form-control mb-3" name="apellidos" placeholder="Apellidos">
 
-                        <input type="submit" class="btn btn-primary">
-                    </form>
-                </div>
+                                    <input type="submit" class="btn btn-primary">
+                                </form>
+                        </div>
 
-                <div class="col-md-8">
-                    <table class="table">
+                        <div class="col-md-8">
+                            <table class="table">
                                 <thead class="table-success table-striped">
                                     <tr>
                                         <th>Codigo</th>
-                                        <th>Dni</th>
+                                        <th>Cedula</th>
                                         <th>Nombres</th>
-                                        <th>pellidos</th>
+                                        <th>Apellidos</th>
                                         <th></th>
                                         <th></th>
                                     </tr>
                                 </thead>
+                               
                                 <tbody>
                                         <?php
                                             while($row=mysqli_fetch_array($query)){
@@ -61,10 +62,10 @@ $row=mysqli_fetch_array($query);
                                             }
                                         ?>
                                 </tbody>
-                <h1>MOSTRAR TABLA</H1>    
-                </div>
-            </div>
+                            </table>    
+                        </div>
+                    </div>
         
-    </div>
-</body>
+                </div>
+        </body>
 </html>
